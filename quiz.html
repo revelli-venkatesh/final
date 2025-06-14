@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz | My Web Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">MyHub</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="todo.html">To-Do</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+      
+    </nav>
+    <button id="theme-toggle" class="icon-btn">🌙</button>
+  </header>
+
+  <main class="container quiz-wrapper" data-aos="fade-up">
+    <h1>Quiz Time!</h1>
+
+    <!-- Quiz Container -->
+    <div id="quiz-container">
+      <div id="question"></div>
+      <ul id="options"></ul>
+      <button id="next-btn" class="btn primary">Next</button>
+    </div>
+
+    <!-- Score Container -->
+    <div id="score-container" class="hidden">
+      <h2>Quiz Completed!</h2>
+      <p>Your score: <span id="score"></span> / <span id="total"></span></p>
+      <p id="suggestion"></p>
+      <a href="quiz.html" class="btn secondary">Retry Quiz</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 My Web Hub</p>
+    <button id="back-to-top" class="icon-btn">↑</button>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="main.js"></script>
+  <script src="script.js"></script>
+  <script>AOS.init({ once: true });</script>
+</body>
+</html>
